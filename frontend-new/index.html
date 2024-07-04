@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>GetData</title>
+    <title>Register</title>
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet" />
@@ -14,8 +14,18 @@
 
   <body>
     <main class="box">
-      <h2>GetData</h2>
+      <h2>Register</h2>
       <form>
+        <div class="inputBox">
+          <label for="userName">Username</label>
+          <input
+            type="text"
+            name="userName"
+            id="userName"
+            placeholder="type your username"
+            required
+          />
+        </div>
         <div class="inputBox">
           <label for="UserEmail">Email</label>
           <input
@@ -31,14 +41,26 @@
           <input
             type="password"
             name="userPassword"
-            id="userPassword"
+            id="UserPassword"
             placeholder="type your password"
             required
           />
         </div>
-        <button type="submit" name="" style="float: left">Submit</button>
-        <a class="button" href="register.html" style="float: left">Register</a>
+        <div class="inputBox">
+          <label for="userConfirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            name="userPassword"
+            id="UserConfirmPassword"
+            placeholder="confirm your password"
+            required
+          />
+        </div>
+        <button type="submit" name="" style="float: left" id="submit">Submit</button>
+        <a class="button" href="getdata.html" style="float: left">GetData</a>
       </form>
     </main>
+
+    <script type="module" src="logic/index.js"></script>
   </body>
 </html>
